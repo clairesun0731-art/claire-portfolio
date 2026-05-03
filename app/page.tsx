@@ -96,7 +96,7 @@ type Lang = 'en' | 'zh';
 // ─────────────────────────────────────────────────────────────
 const TIMELINE_DATA: TimelineItem[] = [
   {
-    year: '2018–2021',
+    year: '2014–2018',
     roleEn: 'Bachelor · English Literature',
     roleZh: '本科 · 英语语言文学',
     company: 'Yangtze University',
@@ -106,9 +106,9 @@ const TIMELINE_DATA: TimelineItem[] = [
     color: T.yellow,
   },
   {
-    year: '2021–2022',
-    roleEn: "Master's · Translation Studies",
-    roleZh: '硕士 · 翻译学',
+    year: '2018–2020',
+    roleEn: "Master's · English Translation",
+    roleZh: '硕士 · 英语笔译',
     company: 'Guangdong University of Foreign Studies',
     descEn: 'Specialised in translation theory, directly feeding multilingual localisation skills into future SEO & SEM campaigns.',
     descZh: '深耕翻译理论与实践，为日后多语言本地化SEO/SEM营销打下坚实基础。',
