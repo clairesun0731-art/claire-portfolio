@@ -646,6 +646,7 @@ export default function Home() {
 
         {/* ══ HERO ══════════════════════════════════════════════════ */}
         {/* PART 4 — ONE h1 for the whole page */}
+        {/* ══ HERO ══════════════════════════════════════════════════ */}
         <section
           aria-label="Hero"
           style={{ paddingTop: 120, paddingBottom: 80, maxWidth: 1100, margin: '0 auto', padding: '120px 24px 80px', position: 'relative', overflow: 'hidden' }}
@@ -664,11 +665,14 @@ export default function Home() {
               {t('Open to B2B Growth Consulting', '开放 B2B 增长咨询合作')}
             </div>
 
-            <h1>
- <h1 style={{ fontSize: 'clamp(40px,7vw,86px)', fontFamily: 'Sora' }}>
-  {/* 直接根据逻辑显示对应的 HTML 片段，不再调用 t() */}
-  I turn <mark style={{ background: T.yellow }}>SEO</mark> into growth
-</h1>
+            {/* 修复后的 H1，完美支持多语言且无报错 */}
+            <h1 style={{ fontSize: 'clamp(40px,7vw,86px)', fontFamily: 'Sora', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, marginBottom: 24 }}>
+              {lang === 'en' ? (
+                <>I turn <mark style={{ background: T.yellow, padding: '0 6px', border: T.border, borderRadius: 8, display: 'inline-block', transform: 'rotate(-2deg)' }}>SEO</mark> into growth</>
+              ) : (
+                <>将 <mark style={{ background: T.yellow, padding: '0 6px', border: T.border, borderRadius: 8, display: 'inline-block', transform: 'rotate(-2deg)' }}>SEO</mark> 转化为增长</>
+              )}
+            </h1>
 
             {/* Keyword ticker */}
             <div style={{ height: 52, marginBottom: 32, overflow: 'hidden', display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -685,7 +689,7 @@ export default function Home() {
               )}
             </p>
 
-            {/* PART 6 — Improved CTA copy */}
+            {/* CTA copy */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center' }}>
               <a href="mailto:clairesun0731@gmail.com" className="nb-btn" style={{ background: T.yellow, color: T.black, padding: '15px 30px', borderRadius: 10, fontSize: 15 }}>
                 🚀 {t('Get B2B SEO Growth Strategy', '获取B2B SEO增长策略')}
