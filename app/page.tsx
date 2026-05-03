@@ -23,7 +23,7 @@ export default function Home() {
   const [copied, setCopied]           = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [heroBounce, setHeroBounce]   = useState(false);
-  const timelineRef = useRef(null);
+  const timelineRef = useRef<HTMLDivElement>(null);
 
   const keywordsEn = ['SEO Systems', 'SEM Engines', 'GEO / AI Search', 'Growth Strategy'];
   const keywordsZh = ['SEO 系统搭建', 'SEM 付费优化', 'GEO / AI 搜索', '全渠道增长'];
@@ -189,7 +189,7 @@ export default function Home() {
     },
     {
       co: '05 · EwayEnergy', url: 'ewayenergy.com',
-      period: '2025-2026', color: PURPLE,
+      period: '2026.01 - 2026.06', color: PURPLE,
       titleEn: 'Solar Energy SEO', titleZh: '太阳能产品SEO',
       probEn: 'Captured SERP features for high-intent solar product searches, boosting organic visibility for a competitive energy hardware brand.',
       probZh: '在竞争激烈的太阳能硬件品牌中斩获高意图搜索SERP特权位，大幅提升自然曝光。',
