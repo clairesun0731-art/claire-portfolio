@@ -664,13 +664,11 @@ export default function Home() {
               {t('Open to B2B Growth Consulting', '开放 B2B 增长咨询合作')}
             </div>
 
-            {/* H1 — PART 4: primary SEO heading */}
-            <h1 style={{ fontSize: 'clamp(40px,7vw,86px)', fontFamily: 'Sora', fontWeight: 800, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
-              {t(
-                <>I turn <mark style={{ background: T.yellow, padding: '0 6px', border: T.border, boxShadow: T.bsSm, fontStyle: 'normal' }}>search</mark> into<br/>compounding <mark style={{ background: T.pink, padding: '0 6px', border: T.border, boxShadow: T.bsSm, fontStyle: 'normal' }}>B2B growth.</mark></>,
-                <>将<mark style={{ background: T.yellow, padding: '0 6px', border: T.border, boxShadow: T.bsSm, fontStyle: 'normal' }}>搜索</mark>转化为<br/>复利式 <mark style={{ background: T.pink, padding: '0 6px', border: T.border, boxShadow: T.bsSm, fontStyle: 'normal' }}>B2B增长。</mark></>
-              )}
-            </h1>
+            <h1>
+ <h1 style={{ fontSize: 'clamp(40px,7vw,86px)', fontFamily: 'Sora' }}>
+  {/* 直接根据逻辑显示对应的 HTML 片段，不再调用 t() */}
+  I turn <mark style={{ background: T.yellow }}>SEO</mark> into growth
+</h1>
 
             {/* Keyword ticker */}
             <div style={{ height: 52, marginBottom: 32, overflow: 'hidden', display: 'flex', alignItems: 'center', gap: 12 }}>
